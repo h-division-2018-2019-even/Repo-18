@@ -1,0 +1,40 @@
+if(data == '1')
+  {
+      digitalWrite(8,LOW);
+      digitalWrite(9,HIGH);
+      digitalWrite(10,LOW);
+      digitalWrite(11,HIGH);
+      data=Serial.read();
+   }
+   else if(data == '2')
+  {
+      digitalWrite(8,HIGH);
+      digitalWrite(9,LOW);
+      digitalWrite(10,HIGH);
+      digitalWrite(11,LOW);
+      data=Serial.read();
+   }
+      else if(data == '3')
+  {
+      digitalWrite(8,LOW);
+      digitalWrite(9,LOW);
+      digitalWrite(10,LOW); 
+      digitalWrite(11,HIGH);
+      data=Serial.read();
+   }
+      else if(data == '4')
+  {
+      digitalWrite(8,LOW);
+      digitalWrite(9,HIGH);
+      digitalWrite(10,LOW);
+      digitalWrite(11,LOW);
+      data = Serial.read();
+   }
+     else if(data == '5')
+  {
+    digitalWrite(8,HIGH);
+    digitalWrite(9,HIGH);
+    digitalWrite(10,HIGH);
+    digitalWrite(11,HIGH);
+    data = Serial.read();   
+  }
