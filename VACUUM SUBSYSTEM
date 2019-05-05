@@ -1,0 +1,20 @@
+
+  else if(data == '6')
+  {
+    digitalWrite(6,HIGH);
+    data = Serial.read();   
+  }
+  else if(data == '7')
+  {
+    digitalWrite(6,LOW);
+    data = Serial.read();   
+  }
+  else if(data == '8')
+  {
+      output_value= analogRead(sensor_pin);
+      output_value = map(output_value,550,0,0,100);
+      Serial.print("Mositure : ");
+      Serial.print(output_value);
+      Serial.println("%");
+      delay(1000);
+  }
